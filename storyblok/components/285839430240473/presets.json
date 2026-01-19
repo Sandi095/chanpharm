@@ -1,0 +1,30 @@
+[
+  {
+    "id": 71099459671528,
+    "name": "Default Footer",
+    "preset": {
+      "_uid": "757558ef-a5b0-4c22-af45-998b132dee00",
+      "email": "office@chanpharm.com",
+      "title": "ChanParm GmbH",
+      "phone1": "+43 664 820 0742",
+      "phone2": "+43 (0)1 997 80 51",
+      "component": "footer",
+      "emailTitle": "Mail",
+      "phoneTitle": "Phone",
+      "address1Line1": "Leidesdorfgasse 14, Top 6 ",
+      "address1Line2": "1190 Vienna,                             Austria",
+      "address1Title": "Headquarter",
+      "address2Line1": "Am Kanal 27, Top 2|3|5 ",
+      "address2Line2": "1110 Vienna, Austria",
+      "address2Title": "Research Facility"
+    },
+    "component_id": 70177626635464,
+    "space_id": 285839430240473,
+    "created_at": "2025-07-20T21:44:26.520Z",
+    "updated_at": "2025-07-20T21:44:26.520Z",
+    "image": "",
+    "color": "",
+    "icon": "",
+    "description": ""
+  }
+]
