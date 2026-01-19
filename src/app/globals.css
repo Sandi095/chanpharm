@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+    --font-sans: var(--font-sans);
+    --color-midnight: var(--color-midnight);
+    --color-cadmium-red: var(--color-cadmium-red);
+    --color-electric-lemon: var(--color-electric-lemon);
+    --color-blue-lotus: var(--color-blue-lotus);
+    --color-background-blue-grey: var(--color-background-blue-grey);
+    --color-blue-grey: var(--color-blue-grey);
+}
+
+:root {
+    --font-sans:
+        Onest, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-midnight: #1b283b;
+    --color-cadmium-red: #fa3d54;
+    --color-electric-lemon: #e1ff66;
+    --color-blue-lotus: #6154d9;
+    --color-background-blue-grey: #edeff5;
+    --color-blue-grey: #c0c9d6;
+}
