@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix build errors for Vercel deployment\n\n- Remove non-existent @storyblok/types import and define StoryblokImageBlock locally\n- Add ''revalidate: 60'' to all page routes to enable static generation\n- Change fetch cache strategy to ''force-cache'' for Storyblok API calls\n- Remove unused NextPage imports\n\nCo-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

@@ -1,7 +1,9 @@
-import {Metadata, NextPage} from 'next';
+import {Metadata} from 'next';
 import {StoryblokClient, StoryblokStory} from '@storyblok/react/rsc';
 import {fetchStoryblokData} from '@/lib/fetch-storyblok-data';
 import {getStoryblokApi} from '@/lib/storyblok';
+
+export const revalidate = 60;
 
 export async function generateStaticParams() {
     const storyblokApi: StoryblokClient = getStoryblokApi();

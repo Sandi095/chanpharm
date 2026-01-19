@@ -17,6 +17,6 @@ export const fetchStoryblokData = async (slug: string): Promise<ISbResult> => {
     const storyblokApi: StoryblokClient = getStoryblokApi();
 
     return storyblokApi.get(`cdn/stories/${slug}`, sbParams, {
-        cache: process.env.VERCEL_ENV === 'production' ? undefined : 'no-store',
+        cache: 'force-cache',
     });
 };

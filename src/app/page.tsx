@@ -1,8 +1,10 @@
-import {Metadata, NextPage} from 'next';
+import {Metadata} from 'next';
 import {fetchStoryblokData} from '@/lib/fetch-storyblok-data';
 import {StoryblokStory} from '@storyblok/react/rsc';
 
 import type {Viewport} from 'next';
+
+export const revalidate = 60;
 
 export async function generateMetadata(): Promise<Metadata> {
     const {data} = await fetchStoryblokData('home');
@@ -30,7 +32,7 @@ export const viewport: Viewport = {
     initialScale: 1,
 };
 
-const Home: NextPage = async () => {
+const Home = async () => {
     const {data} = await fetchStoryblokData('home');
     return <StoryblokStory story={data.story} />;
 };

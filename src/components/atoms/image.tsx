@@ -1,7 +1,14 @@
-import {StoryblokImageBlock} from '@storyblok/types';
 import Image from 'next/image';
 import {Section} from './section';
 import {Container} from './container';
+
+type StoryblokImageBlock = {
+    image?: {
+        filename: string;
+        alt?: string;
+    };
+    label?: string;
+};
 
 export const ImageBlock = ({blok}: {blok: StoryblokImageBlock}) => {
     const imageDimension = blok.image?.filename
@@ -20,7 +27,7 @@ export const ImageBlock = ({blok}: {blok: StoryblokImageBlock}) => {
     return image && image?.src ? (
         <Image
             src={image?.src}
-            alt={image?.alt || blok.label}
+            alt={image?.alt || blok.label || ''}
             width={image?.width}
             height={image?.height}
             className="transparent-header h-full w-full object-cover object-center"
